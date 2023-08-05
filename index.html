@@ -15,7 +15,30 @@
         <title>Thông tin thanh toán</title>
         <link rel="shortcut icon" href="">
         <link rel="icon" type="image/png" href="">
-        <link href="/assets/css/stChi" class="w-full" /></div>
+        <link href="/assets/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+        <link rel="shortcut icon" href="https://i.imgur.com/l6PqP7F.png" type="image/x-icon">
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/sweetalert2.all.min.js"></script>
+        <script>
+            function copy(element) 
+            {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+                Swal.fire("Thông báo", "Copy thành công!", "success");
+            }
+        </script>
+    </head>
+    <main class="min-h-screen relative bg-gray-50 pb-10">
+        <div class="h-60 w-full"><img src="https://i.imgur.com/CH6EPWl.jpg" alt="cover" class="w-full h-full object-cover object-center" /></div>
+        <div class="container px-4">
+            <div class="flex flex-wrap px-4">
+                <div class="w-full lg:w-1/3">
+                    <aside class="sticky top-0 bg-white md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
+                        <div class="w-24 h-24 rounded-md overflow-hidden mx-auto mb-5"><img src="https://i.imgur.com/CSMmtK6.jpg" alt="Vũ Linh Chi" class="w-full" /></div>
                         <div class="text-center">
                             <h1 class="text-xl text-gray-800 font-bold mb-1">
                                 Vũ Linh Chi
